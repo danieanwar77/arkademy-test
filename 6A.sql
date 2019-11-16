@@ -1,0 +1,1 @@
+SELECT product.id AS pid, cashier.name AS csh, product.name AS prd, category.name AS cat, product.price AS pri FROM product INNER JOIN cashier, category WHERE product.id_cashier = cashier.id AND product.id_category = category.id
